@@ -1,13 +1,16 @@
 // Settings
-$desktop: 1025;
 $desktop-xl: 1800;
 $laptop: 1440;
-$tablet: 768;
-$mobile: 320;
+$desktop: 1025; //маленькие мониторы до 1025
+$tablet: 768; // меньше планшета, мобилки до 768
 $desktop-vh: 750;
+$mobile: 320;
 
-@mixin desktop {
-    @media ( min-width: ( $desktop * 1px ) ) {
+// $screen-lg:1280px;
+
+@mixin desktop-xl {
+    // change the values for the situation
+    @media ( min-width: ( $desktop-xl * 1px ) ) {
         @content;
     }
 }
@@ -19,15 +22,20 @@ $desktop-vh: 750;
     }
 }
 
-@mixin desktop-xl {
-    // change the values for the situation
-    @media ( min-width: ( $desktop-xl * 1px ) ) {
+@mixin laptop-h {
+    @media ( min-width: ( $desktop * 1px ) ) and ( max-height: ( ( $desktop-vh - 1 ) * 1px ) ) {
         @content;
     }
 }
 
-@mixin laptop-h {
-    @media ( min-width: ( $desktop * 1px ) ) and ( max-height: ( ( $desktop-vh - 1 ) * 1px ) ) {
+@mixin desktop {
+    @media ( min-width: ( $desktop * 1px ) ) {
+        @content;
+    }
+}
+
+@mixin devices {
+    @media ( max-width: ( ( $desktop - 1 ) * 1px ) ) {
         @content;
     }
 }
@@ -44,8 +52,3 @@ $desktop-vh: 750;
     }
 }
 
-@mixin devices {
-    @media ( max-width: ( ( $desktop - 1 ) * 1px ) ) {
-        @content;
-    }
-}

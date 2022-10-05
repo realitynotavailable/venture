@@ -1,15 +1,32 @@
+
 @font-face {
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "Syncopate";
     font-style: normal;
-    src: url("../assets/fonts/open-sans-v29-latin-regular.woff2") format("woff2"),
-        url("../assets/fonts/open-sans-v29-latin-regular.woff") format("woff");
+    src: url("../assets/fonts/syncopate-v19-latin-regular.woff2") format("woff2"), 
+        url("../assets/fonts/syncopate-v19-latin-regular.woff") format("woff");
 }
 
 @font-face {
     font-weight: 700;
-    font-family: "Montserrat";
+    font-family: "Syncopate";
     font-style: normal;
-    src: url("../assets/fonts/montserrat-v25-latin-700.woff2") format("woff2"),
-        url("../assets/fonts/montserrat-v25-latin-700.woff") format("woff");
+    src: url("../assets/fonts/syncopate-v19-latin-700.woff2") format("woff2"), 
+        url("../assets/fonts/syncopate-v19-latin-700.woff") format("woff");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Raleway";
+    font-style: normal;
+    src: url("../assets/fonts/raleway-v28-latin-regular.woff2") format("woff2"), 
+        url("../assets/fonts/raleway-v28-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Raleway";
+    font-style: normal;
+    src: url("../assets/fonts/raleway-v28-latin-700.woff2") format("woff2"), 
+        url("../assets/fonts/raleway-v28-latin-700.woff") format("woff");
 }

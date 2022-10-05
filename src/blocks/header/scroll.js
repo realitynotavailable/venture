@@ -8,8 +8,10 @@ const containHide = () => header.classList.contains("header--hidden");
 
 export default function headerFix() {
     window.addEventListener("scroll", () => {
+        console.log(`lastScroll: ${lastScroll}`);
+        console.log(`windowPageYOffset: ${window.pageYOffset}`);
     
-        if (scrollPosition() > lastScroll && !containHide()) {
+        if (scrollPosition() > lastScroll && !containHide() && (window.pageYOffset > header.clientHeight)) {
             header.classList.add("header--hidden");
         } else if (scrollPosition() < lastScroll && containHide()) {
             header.classList.remove("header--hidden");
