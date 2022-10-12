@@ -6,7 +6,9 @@ $tablet: 768; // меньше планшета, мобилки до 768
 $desktop-vh: 750;
 $mobile: 320;
 
-// $screen-lg:1280px;
+$screen-lg: 1280;
+$mobile-between: 576;
+
 
 @mixin desktop-xl {
     // change the values for the situation
@@ -35,7 +37,7 @@ $mobile: 320;
 }
 
 @mixin devices {
-    @media ( max-width: ( ( $desktop - 1 ) * 1px ) ) {
+    @media ( max-width: ( ( $screen-lg - 1 ) * 1px ) ) {
         @content;
     }
 }

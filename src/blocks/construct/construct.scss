@@ -1,0 +1,296 @@
+.construct {
+    margin-bottom: 240px;
+
+    @include tablet {
+        margin-bottom: 120px;
+    }
+
+    @include mobile{
+        margin-bottom: 70px;
+    }
+
+    &__title{
+        font: 700 60px/72px $font-family-syncopate;
+        text-align: center;
+
+        @include tablet {
+            margin-bottom: 25px;
+            font-size: 50px;
+            line-height: 52px;
+        }
+
+        @include mobile{
+            margin-bottom: 25px;
+            font-size: 25px;
+            line-height: 26px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 83px;
+        font: 400 40px/48px $font-family-syncopate;
+        text-align: center;
+
+        @include tablet {
+            margin-bottom: 50px;
+            font-size: 26px;
+            line-height: 29px;
+        }
+
+        @include mobile{
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__box-info{
+        max-width: 440px;
+        margin-right: 40px;
+
+        @include tablet {
+            max-width: 672px;
+            margin-right: 0;
+            margin-bottom: 100px;
+        }
+
+        @include mobile {
+            max-width: 672px;
+            margin-right: 0;
+            margin-bottom: 100px;
+
+        }
+    }
+
+    &__box{
+        position: relative;
+        width: 613px;
+
+        @include tablet {
+            width: 741px;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        font: 400 18px/27px $font-family-raleway;
+
+        @include mobile {
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+
+    &__text_pos {
+        margin-bottom: 30px;
+    }
+
+    &__text_bold {
+        font: 700 22px/33px $font-family-raleway;
+
+        @include mobile {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__pillars{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 83px;
+
+        @include tablet{
+            display: none;
+            margin-bottom: 40px;
+        }
+
+        @include mobile{
+            display: none;
+            margin-bottom: 23px;
+        }
+
+        &_mobile{
+            display: none;
+
+            @include tablet{
+                display: flex;
+            }
+
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__pillar{
+        position: relative;
+        width: 140px;
+
+        @include mobile {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 70px;
+            margin-bottom: 17px;
+            padding: 0 15px;
+
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.08);
+                border-radius: 5px;
+                backdrop-filter: blur(9.5px);
+                content: "";
+            }
+
+            &::after {
+                position: absolute;
+                left: 132px;
+                width: 9px;
+                height: 9px;
+                background: #0c0b11;
+                border-radius: 50%;
+                box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.49);
+                content: "";
+            }
+        }
+    }
+
+    &__img{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+
+        @include mobile{
+            height: 50px;
+            margin: 0;
+            margin-right: 86px;
+        }
+    }
+
+    &__description{
+        margin-top: 22px;
+        font: 400 18px/22px $font-family-raleway;
+        text-align: center;
+
+        @include mobile {
+            margin-top: 0;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__info{
+        position: relative;
+
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 5px;
+            backdrop-filter: blur(9.5px);
+            content: "";
+        }
+    }
+
+    &__info-text {
+        max-width: 392px;
+        padding: 15px 33px;
+
+        @include tablet {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        @include mobile {
+            max-width: 672px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+    }
+
+    &__img-bg{
+        position: absolute;
+        top: 66px;
+        right: -57px;
+        z-index: -2;
+        transform: translateX(-50%);
+        transform-origin: bottom;
+        animation-name: bounce-2;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        @keyframes bounce-2 {
+            0%   { transform: translate(-50%, 0); }
+            50%  { transform: translate(-50%, -25px); }
+            100% { transform: translate(-50%, 0); }
+        }
+
+        @include tablet{
+            top: -81px;
+            left: 50%;
+        }
+
+        @include mobile{
+            top: -51px;
+            left: 50%;
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__net-bg{
+        position: absolute;
+        top: -275px;
+        right: -341px;
+        z-index: -2;
+        display: none;
+        width: 594px;
+        height: 500px;
+
+        @include tablet{
+            display: block;
+        }
+
+        @include mobile {
+            top: 0;
+            top: -208px;
+            right: 0;
+            right: -131px;
+            z-index: -3;
+            display: block;
+            width: 353px;
+            height: 297px;
+        }
+        
+    }
+}

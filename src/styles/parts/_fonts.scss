@@ -24,6 +24,14 @@
 }
 
 @font-face {
+    font-weight: 500;
+    font-family: "Raleway";
+    font-style: normal;
+    src: url("../assets/fonts/raleway-v28-latin-500.woff2") format("woff2"), 
+        url("../assets/fonts/raleway-v28-latin-500.woff") format("woff");
+}
+
+@font-face {
     font-weight: 700;
     font-family: "Raleway";
     font-style: normal;
