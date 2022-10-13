@@ -13,7 +13,6 @@ const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 
 const PATHS = {
     index: path.join(__dirname, "../src/scripts/"),
-    about: path.join(__dirname, "../src/scripts/about.js"),
     src: path.join(__dirname, "../src/"),
     dist: path.join(__dirname, "../dist"),
 };
@@ -39,7 +38,6 @@ module.exports = {
 
     entry: {
         app: ["babel-polyfill", PATHS.index],
-        about: [PATHS.about],
     },
     output: {
         filename: `./scripts/${filename("js")}`,
@@ -201,11 +199,6 @@ module.exports = {
             template: `src/pages/index.pug`,
             filename: `${`index.pug`.replace(/\.pug/, ".html")}`,
             chunks: ["app"],
-        }),
-        new HtmlWebpackPlugin({
-            template: `src/pages/about.pug`,
-            filename: `${`about.pug`.replace(/\.pug/, ".html")}`,
-            chunks: ["about"],
         }),
         new CopyWebpackPlugin({
             patterns: [

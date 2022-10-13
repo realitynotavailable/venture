@@ -1,4 +1,7 @@
 import scroll from "../../blocks/header/scroll";
-import "../../blocks/popup/popup";
+import scrollTo from "../../blocks/header/scrollTo";
 
-// scroll();
+document.addEventListener("DOMContentLoaded", () => {
+    scroll();
+    scrollTo();
+});

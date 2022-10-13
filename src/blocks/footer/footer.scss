@@ -3,7 +3,6 @@
     padding: 25px 10px;
     color: $title;
     text-transform: uppercase;
-    // background: rgba(0, 0, 0, 0.47);
     
     &::before{
         position: absolute;
@@ -23,6 +22,7 @@
 
     &__container {
         max-width: 1228px;
+        margin: 0 auto;
     }
 
     &__content{

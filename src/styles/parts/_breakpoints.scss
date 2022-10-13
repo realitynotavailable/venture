@@ -37,7 +37,7 @@ $mobile-between: 576;
 }
 
 @mixin devices {
-    @media ( max-width: ( ( $screen-lg - 1 ) * 1px ) ) {
+    @media ( min-width: ( ( $tablet - 1 ) * 1px ) ) {
         @content;
     }
 }

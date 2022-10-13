@@ -3,16 +3,16 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 200px;
-    padding-top: 116px;
+    padding-top: 293px;
 
     @include tablet {
         margin-bottom: 107px;
-        padding-top: 82px;
+        padding-top: 218px;
     }
 
     @include mobile {
         margin-bottom: 50px;
-        padding-top: 35px;
+        padding-top: 132px;
     }
 
 
@@ -74,8 +74,8 @@
         backdrop-filter: blur(21.5px);
 
         @include devices {
-            right: -22px;
-            width: 160px;
+            right: -145px;
+            width: 283px;
         }
 
         @include mobile {
