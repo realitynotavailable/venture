@@ -10,9 +10,14 @@
         margin-bottom: 67px;
     }
 
+    &__container{
+        max-width: 1232px;
+        margin: 0 auto;
+    }
+
     &__title{
         margin-bottom: 74px;
-        font: 700 60px/63px $font-family-syncopate;
+        font: 700 60px/62px $font-family-syncopate;
         text-align: center;
 
         @include tablet{

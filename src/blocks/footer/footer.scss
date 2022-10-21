@@ -1,6 +1,6 @@
 .footer{
     position: relative;
-    padding: 25px 10px;
+    padding: 20px 10px;
     color: $title;
     text-transform: uppercase;
     
@@ -21,7 +21,7 @@
     }
 
     &__container {
-        max-width: 1228px;
+        max-width: 1243px;
         margin: 0 auto;
     }
 
@@ -36,6 +36,10 @@
         }
     }
 
+    &__logo{
+        margin-right: 15%;
+    }
+
 
     &__img{
         width: 62px;
@@ -47,7 +51,7 @@
 
     &__copyright{
         margin: 0 20px;
-        font: 15px/16px $font-family-syncopate;
+        font: 15px/15px $font-family-syncopate;
 
         @include tablet{
             font-size: 14px;
@@ -62,6 +66,8 @@
     }
 
     &__address{
+
+        font: 400 15px/15px $font-family-syncopate;
 
         @include tablet{
             font-size: 15px;

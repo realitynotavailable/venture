@@ -1,25 +1,6 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: $z-top;
     width: 100%;
     padding: 15px;
-    transition: transform 0.1s linear;
-
-    @include devices {
-
-        &::before{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(18, 16, 25, 0.47);;
-            backdrop-filter: blur(21.5px);
-            content: "";
-        }
-    }
 
 
     &__bg{
@@ -60,7 +41,7 @@
 
     &__logo{
         display: flex;
-        margin-right: 106px;
+        margin-right: 4%;
 
         @include tablet{
             margin-right: 8%;
@@ -73,6 +54,7 @@
 
     &__img{
         height: auto;
+
         @include tablet {
             width: 70px;
         }
@@ -148,7 +130,7 @@
 .menu{
     display: flex;
     align-items: center;
-    width: 1084px;
+    width: 726px;
     text-transform: uppercase;
     @include mobile{
         display: none;
@@ -158,7 +140,7 @@
     &__list{
         display: flex;
         justify-content: space-between;
-        width: 67%;
+        width: 100%;
         margin-right: auto;
     }
 
@@ -167,8 +149,8 @@
         width: 100%;
     }
 
-    &__item{
-        margin-right: 20px;
+    &__item:not( :last-child ){
+        margin-right: 10px;
     }
 
     &__link{
@@ -176,6 +158,14 @@
         @include tablet{
             font-size: 14px;
             line-height: 15px;
+        }
+    }
+
+    &__link_pos{
+        margin-left: 76px;
+
+        @include mobile{
+            display: none;
         }
     }
 }

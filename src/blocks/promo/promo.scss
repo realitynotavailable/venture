@@ -3,11 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 200px;
-    padding-top: 293px;
+    padding-top: 118px;
 
     @include tablet {
         margin-bottom: 107px;
-        padding-top: 218px;
+        padding-top: 112px;
     }
 
     @include mobile {
@@ -35,13 +35,13 @@
     }
 
     &__title{
-        max-width: 829px;
+        max-width: 913px;
         font: 700 70px/84px $font-family-syncopate;
 
-        @include devices{
-            font-size: 60px;
-            line-height: 72px;
-        }
+        // @include devices{
+        //     font-size: 60px;
+        //     line-height: 72px;
+        // }
 
         @include mobile {
             font-size: 30px;
@@ -51,9 +51,12 @@
     }
 
     &__img{
+        position: relative;
+        top: -14px;
+        right: 172px;
         z-index: -1;
-        width: 260px;
-        height: 260px;
+        width: 278px;
+        height: 278px;
 
         @include mobile {
             position: absolute;
@@ -65,7 +68,8 @@
 
     &__cover{
         position: absolute;
-        right: -43%;
+        top: 7px;
+        right: -27%;
         width: 654px;
         height: 250px;
         background: rgba(255, 255, 255, 0.06);
@@ -73,7 +77,7 @@
         border-radius: 5px;
         backdrop-filter: blur(21.5px);
 
-        @include devices {
+        @include tablet {
             right: -145px;
             width: 283px;
         }
@@ -85,9 +89,9 @@
 
     &__bg{
         position: absolute;
-        top: -83px;
-        right: -387px;
-        z-index: -1;
+        top: -64px;
+        right: -331px;
+        z-index: -2;
 
         @include tablet {
             top: -38px;
@@ -107,8 +111,8 @@
     &__link{
         display: block;
         width: 243px;
-        margin-bottom: 77px;
-        padding: 62px 0;
+        margin-bottom: 72px;
+        padding: 58px 0;
         
         @include tablet {
             display: none;
@@ -122,7 +126,7 @@
     &__link-title{
         position: relative;
         display: block;
-        font: 20px/24px $font-family-raleway;
+        font: 600 20px/24px $font-family-raleway;
         text-align: right;
         vertical-align: bottom;
         opacity: 0.5;
@@ -135,14 +139,18 @@
 
         &::before{
             position: absolute;
-            top: -33px;
-            left: 76px;
-            content: url("../assets/img/promo/Ellipse\ 278.png");
+            top: -32px;
+            left: 80px;
+            width: 150px;
+            height: 150px;
+            background: url("../assets/img/promo/Ellipse\ 278.png") no-repeat;
+            // content: url("../assets/img/promo/Ellipse\ 278.png");
+            content: "";
         }
 
         &::after{
             position: absolute;
-            left: 0;
+            left: 10px;
             transition: 0.3s;
             content: url("../assets/img/promo/Arrow\ 1.png");
         }
@@ -177,8 +185,9 @@
 
     &__text{
         align-self: end;
-        max-width: 551px;
-        margin-left: auto;
+        max-width: 530px;
+        margin-right: 96px;
+        // padding-top: 93px;
         font: 400 20px/30px $font-family-raleway;
 
         @include tablet{
@@ -198,16 +207,16 @@
 
 }
 
-.bounce-1 {
-    transform-origin: bottom;
-    animation-name: bounce-1;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
+// .bounce-1 {
+//     transform-origin: bottom;
+//     animation-name: bounce-1;
+//     animation-duration: 4s;
+//     animation-timing-function: linear;
+//     animation-iteration-count: infinite;
+// }
 
-@keyframes bounce-1 {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-25px); }
-    100% { transform: translateY(0); }
-}
+// @keyframes bounce-1 {
+//     0%   { transform: translateY(0); }
+//     50%  { transform: translateY(-25px); }
+//     100% { transform: translateY(0); }
+// }

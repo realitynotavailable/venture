@@ -1,6 +1,6 @@
 .about{
     max-width: 996px;
-    margin-bottom: 200px;
+    margin-bottom: 244px;
 
     @include tablet{
         margin-bottom: 130px;
@@ -12,7 +12,7 @@
 
     &__container {
         position: relative;
-        padding: 36px 207px 64px 32px;
+        padding: 36px 207px 40px 32px;
 
 
         @include mobile {
@@ -22,8 +22,8 @@
 
     &__bg-net{
         position: absolute;
-        top: -221px;
-        left: -184px;
+        top: -193px;
+        left: -170px;
         z-index: -1;
 
         @include tablet{
@@ -55,7 +55,7 @@
 
     &__title{
         margin-bottom: 28px;
-        font: 700 60px/63px $font-family-syncopate;
+        font: 700 60px/62px $font-family-syncopate;
 
         @include tablet{
             margin-bottom: 36px;
@@ -74,8 +74,8 @@
     &__text{
         position: relative;
         z-index: 1;
-        max-width: 757px;
-        padding-bottom: 30px;
+        max-width: 760px;
+        padding-bottom: 23px;
         font: 20px/30px $font-family-raleway;
 
         @include mobile {
@@ -89,7 +89,7 @@
         position: relative;
         z-index: 1;
         display: block;
-        font: 700 20px/26px $font-family-raleway;
+        font: 600 20px/26px $font-family-raleway;
         @include mobile {
             display: none;
         }
