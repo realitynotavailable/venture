@@ -33,15 +33,11 @@
 
     &__text{
         font: 300 15px/22px $font-family-raleway;
-        // text-align: center;
     }
 
     &__link{
-        // display: block;
-        // margin: 0 auto;
         margin-bottom: 25px;
         font: 500 26px/39px $font-family-raleway;
-        // text-align: center;
 
         @include mobile{
             font-size: 20px;
