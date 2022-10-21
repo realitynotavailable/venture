@@ -25,7 +25,7 @@
         }
 
         @include mobile{
-            margin-bottom: 25px;
+            margin-bottom: 19px;
             font-size: 25px;
             line-height: 26px;
         }
@@ -71,7 +71,7 @@
         @include tablet {
             max-width: 672px;
             margin-right: 0;
-            margin-bottom: 100px;
+            margin-bottom: 160px;
         }
 
         @include mobile {
@@ -106,6 +106,10 @@
 
     &__text_pos {
         margin-bottom: 27px;
+
+        @include mobile{
+            margin-bottom: 23px;
+        }
     }
 
     &__text_bold {
@@ -113,7 +117,12 @@
         margin-bottom: 39px;
         font: 700 22px/33px $font-family-raleway;
 
+        @include tablet{
+            max-width: 100%;
+        }
+
         @include mobile {
+            margin-bottom: 23px;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
@@ -159,14 +168,13 @@
             width: 100%;
             height: 70px;
             margin-bottom: 17px;
-            padding: 0 15px;
 
             &::before{
                 position: absolute;
                 top: 0;
-                left: 0;
+                left: -17%;
                 z-index: -1;
-                width: 100%;
+                width: 200%;
                 height: 100%;
                 background: rgba(255, 255, 255, 0.08);
                 border-radius: 5px;
@@ -176,7 +184,7 @@
 
             &::after {
                 position: absolute;
-                left: 132px;
+                left: 83px;
                 width: 9px;
                 height: 9px;
                 background: #0c0b11;
@@ -193,9 +201,9 @@
         margin: 0 auto;
 
         @include mobile{
-            height: 50px;
+            height: 43px;
             margin: 0;
-            margin-right: 86px;
+            margin-right: 76px;
         }
     }
 
@@ -208,6 +216,7 @@
             margin-top: 0;
             font-size: 12px;
             line-height: 18px;
+            text-align: left;
         }
     }
 
@@ -217,7 +226,7 @@
         &::before{
             position: absolute;
             top: 0;
-            left: 0;
+            left: -1%;
             z-index: -1;
             width: 100%;
             height: 100%;
@@ -225,6 +234,15 @@
             border-radius: 5px;
             backdrop-filter: blur(9.5px);
             content: "";
+
+            @include tablet{
+                left: 0;
+            }
+
+            @include mobile{
+                left: -6%;
+                width: 111%;
+            }
         }
     }
 
@@ -234,13 +252,14 @@
 
         @include tablet {
             max-width: 100%;
+            padding: 9px 13px;
             text-align: center;
         }
 
         @include mobile {
             max-width: 672px;
             margin: 0 auto;
-            padding: 10px;
+            padding: 9px 0;
         }
     }
 
@@ -252,15 +271,15 @@
         transform: translateX(-50%);
         transform-origin: bottom;
         animation-name: bounce-2;
-        animation-duration: 4s;
+        animation-duration: 6s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
 
-        // @keyframes bounce-2 {
-        //     0%   { transform: translate(-50%, 0); }
-        //     50%  { transform: translate(-50%, -25px); }
-        //     100% { transform: translate(-50%, 0); }
-        // }
+        @keyframes bounce-2 {
+            0%   { transform: translate(-50%, 0); }
+            50%  { transform: translate(-50%, -25px); }
+            100% { transform: translate(-50%, 0); }
+        }
 
         @include tablet{
             top: -81px;
@@ -289,14 +308,12 @@
         }
 
         @include mobile {
-            top: 0;
-            top: -208px;
-            right: 0;
-            right: -131px;
+            top: -161px;
+            right: -98px;
             z-index: -3;
             display: block;
-            width: 353px;
-            height: 297px;
+            width: 230px;
+            height: 194px;
         }
         
     }

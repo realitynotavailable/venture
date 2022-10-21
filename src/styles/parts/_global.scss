@@ -1,3 +1,5 @@
+@import "breakpoints";
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -14,6 +16,14 @@
     max-width: 1274px;
     margin: 0 auto;
     padding: 0 10px;
+
+    @include tablet{
+        padding: 0 34px;
+    }
+
+    @include mobile{
+        padding: 0 22px;
+    }
 }
 
 .container-fluid{
